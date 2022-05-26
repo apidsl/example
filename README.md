@@ -58,9 +58,6 @@ www | Rezydent Podatkowy Niemiec
 
 ## TODO
 
-
 + apimacro
 + flatedit
-+ plainedit
-
-+ Example with plainedit
++ Examples with plainedit
