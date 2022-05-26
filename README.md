@@ -21,21 +21,22 @@ We are working on apidsl folder
 cd apidsl 
 ````
 
-### Test default function
+## Test default function
 
-Test 1
+### Test
 
 ```bash
 cat ../scripts/example2.txt
 ```
-    http("https://www.rezydent.de/").xpath("title");
+http("https://www.rezydent.de/").xpath("title");
 
 ```bash
 ./apidsl.sh ../scripts/example2.txt
 ```
-    www | Rezydent Podatkowy Niemiec
+www | Rezydent Podatkowy Niemiec
 
-### Test loaded package function
+
+## Test loaded package function
 
 Install [letpath](https://github.com/letpath/bash) package to apidsl project in /apidsl/bash/letpath
 
@@ -43,15 +44,15 @@ Install [letpath](https://github.com/letpath/bash) package to apidsl project in 
 ./add.sh https://github.com/letpath/bash bash letpath
 ```
 
-Test 2
+### Test
 
 ```bash
 cat ../scripts/example7.txt
 ```
-    http("https://www.rezydent.de/").letpath.tag("title");
+http("https://www.rezydent.de/").letpath.tag("title");
 
 ```bash
 ./apidsl.sh ../scripts/example7.txt
 ```
-    www | Rezydent Podatkowy Niemiec
+www | Rezydent Podatkowy Niemiec
     
