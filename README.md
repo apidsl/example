@@ -23,12 +23,14 @@ cd apidsl
 
 ## Test default function
 
-### Test
+### Show the example
 
 ```bash
 cat ../scripts/example2.txt
 ```
 http("https://www.rezydent.de/").xpath("title");
+
+### Check how it works
 
 ```bash
 ./apidsl.sh ../scripts/example2.txt
@@ -44,13 +46,14 @@ Install [letpath](https://github.com/letpath/bash) package to apidsl project in 
 ./add.sh https://github.com/letpath/bash bash letpath
 ```
 
-### Test
+### Show the example
 
 ```bash
 cat ../scripts/example7.txt
 ```
 http("https://www.rezydent.de/").letpath.tag("title");
 
+### Check how it works
 ```bash
 ./apidsl.sh ../scripts/example7.txt
 ```
