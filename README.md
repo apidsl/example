@@ -33,6 +33,7 @@ cat ../scripts/example2.txt
 ```bash
 ./apidsl.sh ../scripts/example2.txt
 ```
+    www | Rezydent Podatkowy Niemiec
 
 ### Test loaded package function
 
@@ -52,3 +53,5 @@ cat ../scripts/example7.txt
 ```bash
 ./apidsl.sh ../scripts/example7.txt
 ```
+    www | Rezydent Podatkowy Niemiec
+    
