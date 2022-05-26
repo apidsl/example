@@ -1,4 +1,4 @@
-# [example.apidsl.com](https://example.apidsl.com/)
+# [examples.apidsl.com](https://examples.apidsl.com/)
 
 Few examples:
 + Install apidsl project
