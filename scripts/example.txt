@@ -1,0 +1,4 @@
+# Example of functions to bash converter
+http("https://www.rezydent.de/").save("index.html");
+load("index.html").xpath("title").save("index.txt");
+
