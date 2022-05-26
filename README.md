@@ -4,6 +4,12 @@ Few examples:
 + Install apidsl project
 + Install letpath package
 
+## Install apidsl examples
+
+```bash
+git clone https://github.com/apidsl/example
+````
+
 ## START
 
 Install [apidsl](https://github.com/apidsl/bash) project
