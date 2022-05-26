@@ -1,12 +1,8 @@
 # example.apidsl.com
 
-Install:
-+ apidsl
-+ apimacro
-+ flatedit
-+ plainedit
-
-+ Example with plainedit
+Few examples:
++ Install apidsl project
++ Install letpath package
 
 ## START
 
@@ -59,3 +55,12 @@ http("https://www.rezydent.de/").letpath.tag("title");
 ```
 www | Rezydent Podatkowy Niemiec
     
+
+## TODO
+
+
++ apimacro
++ flatedit
++ plainedit
+
++ Example with plainedit
