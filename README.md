@@ -26,6 +26,8 @@ cat ../scripts/example2.txt
 ```
 http("https://www.rezydent.de/").xpath("title");
 
+---
+
 ### Check how it works
 
 ```bash
@@ -33,6 +35,7 @@ http("https://www.rezydent.de/").xpath("title");
 ```
 www | Rezydent Podatkowy Niemiec
 
+---
 
 ## Test loaded package function
 
@@ -49,12 +52,15 @@ cat ../scripts/example7.txt
 ```
 http("https://www.rezydent.de/").letpath.tag("title");
 
+---
+
 ### Check how it works
 ```bash
 ./apidsl.sh ../scripts/example7.txt
 ```
 www | Rezydent Podatkowy Niemiec
     
+---
 
 ## TODO
 
