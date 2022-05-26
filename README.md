@@ -19,7 +19,7 @@ cd apidsl
 
 ## Test default function
 
-### Show the example
+### Show the example functions
 
 ```bash
 cat ../scripts/example2.txt
@@ -42,7 +42,7 @@ Install [letpath](https://github.com/letpath/bash) package to apidsl project in 
 ./add.sh https://github.com/letpath/bash bash letpath
 ```
 
-### Show the example
+### Show the example functions
 
 ```bash
 cat ../scripts/example7.txt
