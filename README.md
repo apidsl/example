@@ -10,7 +10,7 @@ Install:
 
 ## START
 
-install apidsl
+Install [apidsl](https://github.com/apidsl/bash) project
 
 ```bash
 git clone https://github.com/apidsl/bash apidsl
