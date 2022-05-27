@@ -68,6 +68,16 @@ www | Rezydent Podatkowy Niemiec
     
 ---
 
+## Test removing package function
+
+remove [letpath](https://github.com/letpath/bash) package from apidsl project in /apidsl/bash/letpath
+
+```bash
+./del.sh bash letpath
+```
+
+
+
 ## TODO
 
 + apimacro
