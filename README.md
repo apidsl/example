@@ -109,8 +109,31 @@ http("https://www.rezydent.de/").letpath.tag("title");
 ```bash
 ./apidsl.sh ../scripts/example7.txt
 ```
+check from command
 ```bash
 ./apidsl.sh 'http("https://www.rezydent.de/").letpath.tag("title")'
+./apidsl.sh 'letpath.tag("title")'
+```
+
+get whois data
+
+```bash
+./apidsl.sh 'letwhois.ns("softreck.com")'
+```
+
+
+```bash
+./apidsl.sh 'letwhois.reverseIp("8.8.8.8")'
+```
+
+get ip from domain host
+
+```bash
+./apidsl.sh 'letwhois.domainIp("softreck.com")'
+```
+
+```bash
+./apidsl.sh 'nslookup("softreck.com")'
 ```
 
 ---

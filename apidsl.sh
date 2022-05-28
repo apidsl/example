@@ -33,7 +33,10 @@ while git_repo=; IFS=$' \t\r\n' read -r git_repo || [[ $git_repo ]]; do
   PATH_LANG="apidsl/apidsl/${language}"
 
   BUILD="pwd"
-  UPDATE="pwd"
+  APIBUILD="./apibuild"
+  APIFORK_BUILD="pwd"
+  APIFORK_BUILD="./apifork install"
+  APIFORK_UPDATE="./apifork update"
   if [ "$language" == "php" ]; then
     BUILD="composer update"
     UPDATE="composer update"
@@ -44,11 +47,16 @@ while git_repo=; IFS=$' \t\r\n' read -r git_repo || [[ $git_repo ]]; do
     [ ! -z "$PATH_LANG" ] && mkdir -p ${PATH_LANG}
     cd ${PATH_LANG} && git clone ${git_url} ${name}
     cd ${name} && ${BUILD}
+    pwd
+    ${APIFORK_BUILD}
+    ${APIBUILD}
     cd ${PROJECT_PATH}
     ##
     ##echo "apidsl/apidsl/${language}/${name}" >>.gitignore
   elif [ "$CMD" == "update" ]; then
     cd "$PATH_LANG/$name" && git pull && ${UPDATE}
+    pwd
+    ${APIFORK_UPDATE}
     cd ${PROJECT_PATH}
   elif [ "$CMD" == "remove" ]; then
     echo "$PATH_LANG/$name"
