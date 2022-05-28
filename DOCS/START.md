@@ -2,8 +2,6 @@
 ## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/START.md)
 
 
-
-
 ## Test default function
 
 ### Show the example functions

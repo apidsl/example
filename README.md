@@ -28,19 +28,20 @@ git clone https://github.com/apidsl/example
 ## Install apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
 
 
-Install [apidsl](https://github.com/apidsl/bash) project
 
-```bash
-git clone https://github.com/apidsl/bash apidsl
-````
 
 install dependencies from file: [apifork.txt](apifork.txt)
 
 ```bash
-./apifork
+./apifork install
 ```
 
-install packages for apidsl from file: [apidsl.txt](apidsl.txt)
+OR for development
+```bash
+./apifork install apifork.dev.txt
+```
+
+install packages and build for [apidsl](https://github.com/apidsl/bash) from file: [apidsl.txt](apidsl.txt)
 
 ```bash
 ./apidsl.sh install
@@ -66,8 +67,6 @@ cd apifork
 
 
 ## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/START.md)
-
-
 
 
 ## Test default function
@@ -159,6 +158,10 @@ remove [letpath](https://github.com/letpath/bash) package from apidsl project in
 
 ## Contribution [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION.md)
 
+for development
+```bash
+./apifork install apifork.dev.txt
+```
 
 Install dependencies after created project
 ```bash
