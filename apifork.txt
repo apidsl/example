@@ -1,0 +1,4 @@
+https://github.com/apidsl/bash apidsl
+https://github.com/plainedit/bash plainedit
+https://github.com/flatedit/bash.git flatedit
+
