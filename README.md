@@ -34,11 +34,6 @@ Install [apidsl](https://github.com/apidsl/bash) project
 git clone https://github.com/apidsl/bash apidsl
 ````
 
-We are working on apidsl folder
-```bash
-cd apidsl 
-````
-
 install dependencies from file: [apifork.txt](apifork.txt)
 
 ```bash
@@ -51,7 +46,15 @@ install packages for apidsl from file: [apidsl.txt](apidsl.txt)
 ./apidsl.sh install
 ```
 
+
 OR
+
+We are working on apidsl folder
+
+```bash
+cd apidsl 
+````
+
 install packages inside apidsl
 
 ```bash
@@ -107,7 +110,6 @@ http("https://www.rezydent.de/").letpath.tag("title");
 ./apidsl.sh ../scripts/example7.txt
 ```
 ```bash
-cd apidsl
 ./apidsl.sh 'http("https://www.rezydent.de/").letpath.tag("title")'
 ```
 

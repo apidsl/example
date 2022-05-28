@@ -44,7 +44,6 @@ http("https://www.rezydent.de/").letpath.tag("title");
 ./apidsl.sh ../scripts/example7.txt
 ```
 ```bash
-cd apidsl
 ./apidsl.sh 'http("https://www.rezydent.de/").letpath.tag("title")'
 ```
 
