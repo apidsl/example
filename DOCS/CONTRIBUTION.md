@@ -3,6 +3,8 @@
 
 Solutions for development:
 
+### Install
+
 Install dependencies after created project
 ```bash
 curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
@@ -26,19 +28,20 @@ echo "./DOCS/MENU.md" >> "readme.txt"
 echo "./DOCS/ABOUT.md" >> "readme.txt"
 echo "./DOCS/FOOT.md" >> "readme.txt"
 ```
+
 ### Update documentation
 
 ```bash
  ./readme
 ```
 
-Config project file
+### Config project file
 
-The config file: **.apifork** can be another, e.g. **projects.txt**
+The config file: **.apifork** can be another, e.g. **apifork.txt**
 
-Just change the first line in  **.apifork** on **projects.txt**
+Just change the first line in  **.apifork** on **apifork.txt**
 ```bash
-projects.txt
+apifork.txt
 ```
 
 
