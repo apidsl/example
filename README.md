@@ -12,7 +12,7 @@
 
 
 
-## About inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/ABOUT.md)
+## About apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/ABOUT.md)
 
 
 Few examples:
@@ -25,9 +25,7 @@ Few examples:
 git clone https://github.com/apidsl/example
 ````
 
-## Install apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
-
-
+## Install  [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
 
 
 install dependencies from file: [apifork.txt](apifork.txt)
@@ -178,8 +176,8 @@ echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" >> "apipacka
 
 Edit documentation with flatedit
 ```bash
-echo "#!/bin/bash" > "readme"
-echo "./flatedit/readme.sh readme.txt" > "readme"
+echo '#!/bin/bash' > "readme"
+echo './flatedit/readme.sh readme.txt' >> "readme"
 echo "./DOCS/MENU.md" >> "readme.txt"
 echo "./DOCS/ABOUT.md" >> "readme.txt"
 echo "./DOCS/FOOT.md" >> "readme.txt"

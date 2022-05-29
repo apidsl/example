@@ -1,7 +1,5 @@
 
-## Install apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
-
-
+## Install  [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
 
 
 install dependencies from file: [apifork.txt](apifork.txt)

@@ -53,9 +53,12 @@ while git_repo=; IFS=$' \t\r\n' read -r git_repo || [[ $git_repo ]]; do
     ##
     ##echo "apidsl/apidsl/${language}/${name}" >>.gitignore
   elif [ "$CMD" == "update" ]; then
-    cd "$GIT_PATH/$GIT_FOLDER" && git pull && ${UPDATE}
+    cd "$GIT_PATH/$GIT_FOLDER" && git pull
     pwd
+    ${UPDATE}
     ${APIFORK_UPDATE}
+    ${APIBUILD}
+
     cd ${PROJECT_PATH}
   elif [ "$CMD" == "remove" ]; then
     echo "$GIT_PATH/$GIT_FOLDER"
