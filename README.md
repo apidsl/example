@@ -66,10 +66,9 @@ cd apifork
 
 
 
-## Start inframonit [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/START.md)
+## Start apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/START.md)
 
-
-## Test default function
+Test default functions
 
 ### Show the example functions
 
@@ -158,18 +157,31 @@ remove [letpath](https://github.com/letpath/bash) package from apidsl project in
 
 ## Contribution [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION.md)
 
-for development
-```bash
-./apifork install apifork.dev.txt
-```
+Solutions for development:
 
 Install dependencies after created project
 ```bash
 curl https://raw.githubusercontent.com/apifork/bash/main/apifork.sh -o apifork
-echo "apifork.txt" > ".apifork"
-echo "" > "apifork.txt"
+echo "https://github.com/flatedit/bash.git flatedit" > "apifork.dev.txt"
+./apifork install apifork.dev.txt
 ```
 
+
+Install package list after created project
+```bash
+curl https://raw.githubusercontent.com/apipackage/bash/main/apipackage.sh -o apipackage
+echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" > "apipackage.txt"
+./apipackage install
+```
+
+Edit documentation with flatedit
+```bash
+echo "#!/bin/bash" > "readme"
+echo "./flatedit/readme.sh readme.txt" > "readme"
+echo "./DOCS/MENU.md" >> "readme.txt"
+echo "./DOCS/ABOUT.md" >> "readme.txt"
+echo "./DOCS/FOOT.md" >> "readme.txt"
+```
 ### Update documentation
 
 ```bash

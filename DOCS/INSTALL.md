@@ -15,10 +15,10 @@ OR for development
 ./apifork install apifork.dev.txt
 ```
 
-install packages and build for [apidsl](https://github.com/apidsl/bash) from file: [apidsl.txt](apidsl.txt)
+install packages and build for [apidsl](https://github.com/apidsl/bash) from file: [apipackage.txt](apipackage.txt)
 
 ```bash
-./apidsl.sh install
+./apipackage install
 ```
 
 
