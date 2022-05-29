@@ -33,7 +33,7 @@ while git_repo=; IFS=$' \t\r\n' read -r git_repo || [[ $git_repo ]]; do
 
   BUILD="pwd"
   APIBUILD="./apibuild"
-  APIFORK_BUILD="pwd"
+  #APIFORK_BUILD="pwd"
   APIFORK_BUILD="./apifork install"
   APIFORK_UPDATE="./apifork update"
   #if [ "$language" == "php" ]; then
@@ -45,19 +45,20 @@ while git_repo=; IFS=$' \t\r\n' read -r git_repo || [[ $git_repo ]]; do
   if [ "$CMD" == "install" ]; then
     [ ! -z "$GIT_PATH" ] && mkdir -p ${GIT_PATH}
     cd ${GIT_PATH} && git clone ${GIT_URL} ${GIT_FOLDER}
-    cd ${GIT_FOLDER} && ${BUILD}
+    cd ${GIT_FOLDER}
     pwd
     ${APIFORK_BUILD}
     ${APIBUILD}
+    ${BUILD}
     cd ${PROJECT_PATH}
     ##
     ##echo "apidsl/apidsl/${language}/${name}" >>.gitignore
   elif [ "$CMD" == "update" ]; then
     cd "$GIT_PATH/$GIT_FOLDER" && git pull
     pwd
-    ${UPDATE}
     ${APIFORK_UPDATE}
     ${APIBUILD}
+    ${UPDATE}
 
     cd ${PROJECT_PATH}
   elif [ "$CMD" == "remove" ]; then
