@@ -1,3 +1,10 @@
 https://github.com/flatedit/bash.git flatedit
 https://github.com/plainedit/bash.git plainedit
 https://github.com/reactphp/dns.git reactphp
+https://github.com/grabwhois/bash grabwhois
+https://github.com/api-pong/bash apipong
+https://github.com/airscanning/bash airscanning
+https://github.com/multisitemap/bash multisitemap
+https://github.com/botreck/puppeteer puppeteer
+https://github.com/letwhois/bash letwhois
+https://github.com/letpath/bash letpath
