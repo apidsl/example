@@ -1,15 +1,25 @@
 
-![logo.inframonit.com](https://logo.inframonit.com/1/cover.png)
+![logo.apidsl.com](https://logo.apidsl.com/1/cover.png)
 
-# [bash.inframonit.com](https://bash.inframonit.com/) [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/MENU.md) 
+# [examples.apidsl.com](https://examples.apidsl.com/) [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/MENU.md) 
 
-+ [Example usae cases - examples.inframonit.com](http://examples.inframonit.com)
-+ [Blog - www.inframonit.com](https://www.inframonit.com/)
-+ [Documentation - docs.inframonit.com](https://docs.inframonit.com/)
-+ [Logotyp: logo.inframonit.com](https://logo.inframonit.com/)
++ [Blog - www.apidsl.com](https://www.apidsl.com/)
++ [Documentation - docs.apidsl.com](https://docs.apidsl.com/)
++ [Logotyp: logo.apidsl.com](https://logo.apidsl.com/)
 
 + [LICENSE](LICENSE)
 
+
++ [examples.apidsl.com](http://examples.apidsl.com)
++ [api # letAPI](http://examples.apidsl.com/api)
++ [deployment # letPath](http://examples.apidsl.com/deployment)
++ [letclient # make a screenshot](http://examples.apidsl.com/letclient)
++ [logs # logs](http://examples.apidsl.com/logs)
++ [loop # loop](http://examples.apidsl.com/loop)
++ [monitoring # letPath](http://examples.apidsl.com/monitoring)
++ [path # letPath](http://examples.apidsl.com/path)
++ [screenshot # make a screenshot](http://examples.apidsl.com/screenshot)
++ [whois # letWHOIS](http://examples.apidsl.com/whois)
 
 
 ## About apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/ABOUT.md)
@@ -19,49 +29,10 @@ Few examples:
 + Install apidsl project
 + Install letpath package
 
-## Install apidsl examples
+TODO: przenieść do examples
+przykładowo aby zrobić zrzuty ekranu setek stron wystarczy lista plików w pliku tekstowym oraz 4 komendy w jednej linii
 
-```bash
-git clone https://github.com/apidsl/example
-````
-
-## Install  [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/INSTALL.md)
-
-
-install dependencies from file: [apifork.txt](apifork.txt)
-
-```bash
-./apifork install
-```
-
-OR for development
-```bash
-./apifork install apifork.dev.txt
-```
-
-install packages and build for [apidsl](https://github.com/apidsl/bash) from file: [apipackage.txt](apipackage.txt)
-
-```bash
-./apipackage install
-```
-
-
-OR
-
-We are working on apidsl folder
-
-```bash
-cd apidsl 
-````
-
-install packages inside apidsl
-
-```bash
-cd apifork
-./add https://github.com/letwhois/bash bash letwhois
-./add https://github.com/reactphp/dns php reactphp
-```
-
++ [screenshot # make a screenshot](http://examples.apidsl.com/screenshot)
 
 
 ## Start apidsl [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/START.md)
@@ -80,7 +51,7 @@ http("https://www.rezydent.de/").xpath("title");
 ### Check how it works
 
 ```bash
-./apidsl.sh ../scripts/example2.txt
+apidsl ../scripts/example2.txt
 ```
 www | Rezydent Podatkowy Niemiec
 
@@ -103,40 +74,40 @@ cat ../scripts/example7.txt
 ```
 http("https://www.rezydent.de/").letpath.tag("title");
 ```bash
-./apidsl.sh ../scripts/example7.txt
+apidsl ../scripts/example7.txt
 ```
 check from command
 ```bash
-./apidsl.sh 'http("https://www.rezydent.de/").letpath.tag("title")'
-./apidsl.sh 'letpath.tag("title")'
+apidsl 'http("https://www.rezydent.de/").letpath.tag("title")'
+apidsl 'letpath.tag("title")'
 ```
 
 get whois data
 
 ```bash
-./apidsl.sh 'letwhois.ns("softreck.com")'
+apidsl 'letwhois.ns("softreck.com")'
 ```
 
 
 ```bash
-./apidsl.sh 'letwhois.reverseIp("8.8.8.8")'
+apidsl 'letwhois.reverseIp("8.8.8.8")'
 ```
 
 get ip from domain host
 
 ```bash
-./apidsl.sh 'letwhois.domainIp("softreck.com")'
+apidsl 'letwhois.domainIp("softreck.com")'
 ```
 
 ```bash
-./apidsl.sh 'nslookup("softreck.com")'
+apidsl 'nslookup("softreck.com")'
 ```
 
 ---
 
 ### Check how it works
 ```bash
-./apidsl.sh ../scripts/example7.txt
+apidsl ../scripts/example7.txt
 ```
 www | Rezydent Podatkowy Niemiec
     
@@ -157,6 +128,62 @@ remove [letpath](https://github.com/letpath/bash) package from apidsl project in
 
 Solutions for development:
 
+
+## Contribution - documentation [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION/DOCS.md)
+
+
+Edit documentation in 2 steps, first make the outputs over **plainedit.sh**
+Create docs over **readme.sh**
+
+list of projects
+```bash
+./plainedit.sh
+```
+
+Update html over plainedit
+
+```bash
+./plainedit.sh debug
+```
+```bash
+./plainedit.sh deployment
+```
+```bash
+./plainedit.sh api
+```
+```bash
+./plainedit.sh client
+```
+```bash
+./plainedit.sh path
+```
+```bash
+./plainedit.sh whois
+```
+```bash
+./plainedit.sh loop
+```
+```bash
+./plainedit.sh monitoring
+```
+```bash
+./plainedit.sh screenshot
+```
+
+
+Update documentation
+
+```bash
+./readme.sh
+```
+
+
+
+
+## Contribution - installation [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION/INSTALL.md)
+
+Solutions for development:
+
 ### Install
 
 Install dependencies after created project
@@ -174,31 +201,6 @@ echo "https://github.com/letwhois/bash apidsl/apidsl/bash letwhois" >> "apipacka
 ./apipackage install
 ```
 
-Edit documentation with flatedit
-```bash
-echo '#!/bin/bash' > "readme"
-echo './flatedit/readme.sh readme.txt' >> "readme"
-echo "./DOCS/MENU.md" >> "readme.txt"
-echo "./DOCS/ABOUT.md" >> "readme.txt"
-echo "./DOCS/FOOT.md" >> "readme.txt"
-```
-
-### Update documentation
-
-```bash
- ./readme
-```
-
-### Config project file
-
-The config file: **.apifork** can be another, e.g. **apifork.txt**
-
-Just change the first line in  **.apifork** on **apifork.txt**
-```bash
-apifork.txt
-```
-
-
 ### install
 
 [minsungson/GitHub-cURL: A guide to installing files from GitHub repos in terminal using cURL](https://github.com/minsungson/GitHub-cURL)
@@ -212,11 +214,22 @@ OR
 ./apifork
 ```
 
+
+## Contribution - installation [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION/INSTALL.md)
+
+Solutions for development:
+
+
+
 ### update
 
 ```bash
 ./apifork update
 ```
+
+
+
+## Contribution - remove [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/CONTRIBUTION/CLEAN.md)
 
 
 ### remove
@@ -236,3 +249,4 @@ OR
 
 + [edit](https://github.com/apidsl/examples/edit/main/README.md)
 + [apidsl/examples](https://github.com/apidsl/examples)
++ [examples.apidsl.com](https://examples.apidsl.com)
