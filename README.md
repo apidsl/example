@@ -76,33 +76,6 @@ http("https://www.rezydent.de/").letpath.tag("title");
 ```bash
 apidsl ../scripts/example7.txt
 ```
-check from command
-```bash
-apidsl 'http("https://www.rezydent.de/").letpath.tag("title")'
-apidsl 'letpath.tag("title")'
-```
-
-get whois data
-
-```bash
-apidsl 'letwhois.ns("softreck.com")'
-```
-
-
-```bash
-apidsl 'letwhois.reverseIp("8.8.8.8")'
-```
-
-get ip from domain host
-
-```bash
-apidsl 'letwhois.domainIp("softreck.com")'
-```
-
-```bash
-apidsl 'nslookup("softreck.com")'
-```
-
 ---
 
 ### Check how it works
@@ -112,14 +85,6 @@ apidsl ../scripts/example7.txt
 www | Rezydent Podatkowy Niemiec
     
 ---
-
-## Test removing package function
-
-remove [letpath](https://github.com/letpath/bash) package from apidsl project in /apidsl/bash/letpath
-
-```bash
-./del.sh bash letpath
-```
 
 
 

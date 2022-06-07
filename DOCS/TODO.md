@@ -1,7 +1,6 @@
 
-## TODO [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/WHOIS.md)
+## TODO [<span style='font-size:20px;'>&#x270D;</span>](https://github.com/apidsl/examples/edit/main/DOCS/TODO.md)
 
-
-+ apimacro
-+ flatedit
-+ Examples with plainedit
+przeniesć dokumentacje do docs
+reszta do inframonit
+przykładowe skrypty monitorujące w monit.page

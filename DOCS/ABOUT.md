@@ -6,8 +6,7 @@ Few examples:
 + Install apidsl project
 + Install letpath package
 
-## Install apidsl examples
+TODO: przenieść do examples
+przykładowo aby zrobić zrzuty ekranu setek stron wystarczy lista plików w pliku tekstowym oraz 4 komendy w jednej linii
 
-```bash
-git clone https://github.com/apidsl/example
-````
++ [screenshot # make a screenshot](http://examples.apidsl.com/screenshot)
