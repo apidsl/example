@@ -13,7 +13,7 @@ list of projects
 Update html over plainedit
 
 ```bash
-./plainedit.sh debug
+./plainedit.sh logs
 ```
 ```bash
 ./plainedit.sh deployment

@@ -19,7 +19,6 @@ plainedit
 */*.js
 */*.java
 .bash
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -193,3 +192,6 @@ letpath
 .apidsl.cache/1654635177.logs.txt
 .apidsl.cache/1654635277.logs.txt
 .apidsl.cache/1654635277.logs.txt
+.apidsl.cache/1654635640.logs.txt
+.apidsl.cache/1654635640.logs.txt
+.apidsl.cache/1654635640.logs.txt

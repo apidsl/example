@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" media='screen and (min-width: 480px)' href="../html/markdown.css"/>
+    <link rel="stylesheet" media='screen and (max-width: 480px)' href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+</head>
+<body>
+<ul>
+<li><a href="http://examples.apidsl.com">examples.apidsl.com</a></li>
+<li><a href="http://examples.apidsl.com/api">api # letAPI</a></li>
+<li><a href="http://examples.apidsl.com/deployment">deployment # letPath</a></li>
+<li><a href="http://examples.apidsl.com/letclient">letclient # make a screenshot</a></li>
+<li><a href="http://examples.apidsl.com/logs">logs # logs</a></li>
+<li><a href="http://examples.apidsl.com/loop">loop # loop</a></li>
+<li><a href="http://examples.apidsl.com/monitoring">monitoring # letPath</a></li>
+<li><a href="http://examples.apidsl.com/path">path # letPath</a></li>
+<li><a href="http://examples.apidsl.com/screenshot">screenshot # make a screenshot</a></li>
+<li><a href="http://examples.apidsl.com/whois">whois # letWHOIS</a></li>
+</ul>
+<hr>
+<h1 id="logs">logs</h1>
+<p>how to use, help, commands</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">./apidsl.sh</span> --help</span></code></pre></div>
+<p>EXECUTED bash:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">apidsl</span> 0.2</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="ex">OPERATOR</span> or COMMAND is needed!</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="co"># OPERATORS:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="ex">apidsl</span> dev - development packages, for contributors and developers</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a><span class="ex">apidsl</span> test - for testing the project</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="ex">apidsl</span> --get - get require dependency files apidsl script from file</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a><span class="ex">apidsl</span> --run - run apidsl script from file</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a><span class="ex">apidsl</span> --clean - clean cache data</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a><span class="ex">apidsl</span> --help - how to use apidsl</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a><span class="ex">apidsl</span> --history - show logs during runnig</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a><span class="ex">apidsl</span> --logs - show logs during runnig</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a><span class="ex">apidsl</span> --init - copy command apidsl.sh to /usrl/local/bin to use apidsl such a system command in shell</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a>  <span class="ex">apidsl</span> --init apidsl - with 2 params: copy command apidsl to /usrl/local/bin to use apidsl such a system command in shell</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a><span class="ex">apidsl</span> --download - download from repository and save as apidsl file</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a><span class="co"># USAGE COMMAND:</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a><span class="ex">apidsl</span> <span class="st">&#39;get(&quot;https://github.com/letpath/bash&quot;,&quot;path&quot;)&#39;</span> - import project from git</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a><span class="ex">apidsl</span> <span class="st">&#39;path.load(&quot;flatedit.txt&quot;)&#39;</span> - use imported command, such load file </span></code></pre></div>
+<h2 id="logs-1">LOGS</h2>
+<p>print logs for latest run</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="ex">./apidsl.sh</span> --logs <span class="st">&#39;get(&quot;https://github.com/letpath/bash&quot;,&quot;letpath&quot;)&#39;</span></span></code></pre></div>
+<p>EXECUTED bash:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">.</span>/apidsl.sh: <span class="ex">./.apidsl.cache</span>/1654635640.sh: <span class="ex">/bin</span>/b: <span class="ex">Defekter</span> Interpreter: Datei oder Verzeichnis nicht gefunden</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true"></a><span class="ex">COMMANDS</span>:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true"></a><span class="ex">get</span>(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true"></a><span class="ex">SCRIPTS</span>:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true"></a><span class="co">#!/bin/ba</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true"></a><span class="ex">LOGS</span>:</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true"></a><span class="ex">23</span>:00:40.066 START</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true"></a><span class="ex">CMD</span> get(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true"></a><span class="ex">OPTION</span> --logs</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true"></a><span class="ex">INPUT_FILE_PATH</span> .apidsl.cache/1654635640.txt</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true"></a><span class="ex">get</span>(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span>)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: get(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true"></a> <span class="ex">KEY</span>: get</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true"></a> <span class="ex">VAL</span>: <span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true"></a> <span class="ex">F0</span>: get</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true"></a> <span class="ex">V0</span>: <span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true"></a>!!! <span class="ex">FOLDER</span> letpath EXIST, PLEASE INSTALL IN ANOTHER FOLDER </span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true"></a><span class="ex">END</span>: .apidsl.cache/1654635640.sh</span></code></pre></div>
+<h2 id="debug">DEBUG</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="ex">apidsl</span> --logs <span class="st">&#39;letpath.load(&quot;apifork.txt&quot;)&#39;</span></span></code></pre></div>
+<p>EXECUTED bash:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="ex">https</span>://github.com/apidsl/bash apidsl</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a><span class="ex">COMMANDS</span>:</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a><span class="ex">letpath.load</span>(<span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true"></a><span class="ex">SCRIPTS</span>:</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a><span class="ex">./letpath/load.sh</span> <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true"></a><span class="ex">LOGS</span>:</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true"></a><span class="ex">23</span>:00:40.079 START</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true"></a><span class="ex">CMD</span> letpath.load(<span class="st">&quot;apifork.txt&quot;</span>)</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true"></a><span class="ex">OPTION</span> --logs</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true"></a><span class="ex">INPUT_FILE_PATH</span> .apidsl.cache/1654635640.txt</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true"></a><span class="ex">letpath.load</span>(<span class="st">&quot;apifork.txt&quot;</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: letpath.load(<span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true"></a> <span class="ex">KEY</span>: letpath.load</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true"></a> <span class="ex">VAL</span>: <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: </span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true"></a> <span class="ex">F0</span>: letpath.load</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true"></a> <span class="ex">V0</span>: <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true"></a><span class="ex">ADD</span> COMMAND 0: letpath.load <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true"></a><span class="ex">ADD</span> SCRIPT 0: ./letpath/load.sh <span class="st">&quot;apifork.txt&quot;</span> TO FILE: .apidsl.cache/1654635640.sh</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true"></a><span class="ex">END</span>: .apidsl.cache/1654635640.sh</span></code></pre></div>
+<p>Show infos after run</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="ex">apidsl</span> --logs <span class="st">&#39;get(&quot;https://github.com/letpath/bash&quot;,&quot;letpath&quot;).letpath.load(&quot;apifork.txt&quot;)&#39;</span></span></code></pre></div>
+<p>EXECUTED bash:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="ex">https</span>://github.com/apidsl/bash apidsl</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true"></a><span class="ex">COMMANDS</span>:</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true"></a><span class="ex">get</span>(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true"></a><span class="ex">letpath.load</span>(<span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true"></a><span class="ex">SCRIPTS</span>:</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true"></a><span class="ex">./letpath/load.sh</span> <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true"></a><span class="ex">LOGS</span>:</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true"></a><span class="ex">23</span>:00:40.094 START</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true"></a><span class="ex">CMD</span> get(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span>)<span class="ex">.letpath.load</span>(<span class="st">&quot;apifork.txt&quot;</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true"></a><span class="ex">OPTION</span> --logs</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true"></a><span class="ex">INPUT_FILE_PATH</span> .apidsl.cache/1654635640.txt</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true"></a><span class="ex">get</span>(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span>)<span class="ex">.letpath.load</span>(<span class="st">&quot;apifork.txt&quot;</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: get(<span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true"></a> <span class="ex">KEY</span>: get</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true"></a> <span class="ex">VAL</span>: <span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: letpath.load(<span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true"></a> <span class="ex">KEY</span>: letpath.load</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true"></a> <span class="ex">VAL</span>: <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true"></a><span class="ex">LINE</span> BEFORE CLEANING: </span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true"></a> <span class="ex">F0</span>: get</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true"></a> <span class="ex">V0</span>: <span class="st">&quot;https://github.com/letpath/bash&quot;</span>,<span class="st">&quot;letpath&quot;</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true"></a>!!! <span class="ex">FOLDER</span> letpath EXIST, PLEASE INSTALL IN ANOTHER FOLDER </span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true"></a> <span class="ex">F1</span>: letpath.load</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true"></a> <span class="ex">V1</span>: <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true"></a><span class="ex">ADD</span> COMMAND 1: letpath.load <span class="st">&quot;apifork.txt&quot;</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true"></a><span class="ex">ADD</span> SCRIPT 1: ./letpath/load.sh <span class="st">&quot;apifork.txt&quot;</span> TO FILE: .apidsl.cache/1654635640.sh</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true"></a><span class="ex">END</span>: .apidsl.cache/1654635640.sh</span></code></pre></div>
+<h2 id="stop">STOP</h2>
+<hr>
+<h2>LOCAL MENU</h2>
+<ul>
+<li><a href="file:///media/tom/projects/apidsl/examples/">/media/tom/projects/apidsl/examples</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/api/index.html">api # letAPI</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/deployment/index.html">deployment # letPath</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/letclient/index.html">letclient # make a screenshot</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/logs/index.html">logs # logs</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/loop/index.html">loop # loop</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/monitoring/index.html">monitoring # letPath</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/path/index.html">path # letPath</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/screenshot/index.html">screenshot # make a screenshot</a></li>
+<li><a href="file:///media/tom/projects/apidsl/examples/whois/index.html">whois # letWHOIS</a></li>
+</ul>
+</body>
+</html>
