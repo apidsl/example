@@ -1,0 +1,6 @@
+./MD/MENU.md
+./MD/PROJECTS.md
+./MD/ABOUT.md
+./MD/START.md
+./MD/TODO.md
+./MD/FOOT.md
